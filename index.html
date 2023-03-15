@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <title>Menú</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <span class="material-symbols-outlined">
+                      fastfood
+                      </span>
+                    <strong>Hamburgueseria</strong>
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#hamburguesas">Hamburguesas</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#pizzas">Pizzas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bebidas">Bebidas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#zonaCarrito" onclick="mostrarCarrito()">Carrito</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    </header>
+
+    <main role="main">
+      <div id="hamburguesas">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <br><br><br>
+          <h1 class="jumbotron-heading">Hamburguesas</h1>
+        </div>
+      </section>
+      <br><br>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaClasica.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa Clasica $1200</h5>
+                  <p class="card-text">Bacon, queso chedar, tomate y lechuga.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa clasica`, 1200)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaDoble.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa Doble $1700</h5>
+                  <p class="card-text">Doble hamburguesa, queso chedar y lechuga.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa doble`, 1700)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaAmericana.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa Americana $1500</h5>
+                  <p class="card-text">Huevo frito, bacon y queso chedar.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa americana`, 1500)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaSinTacc.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa Sin TACC $1800</h5>
+                  <p class="card-text">Cebolla, lechuga, tomate y queso chedar.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa sin Tacc`, 1800)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaVegana.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa vegana $2000</h5>
+                  <p class="card-text">Hamburguesa de lentejas y lechuga.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa vegana`, 2000)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+              src="./img/hamburguesaPollo.jpg"
+              class="card-img-top"
+              alt=""
+            />
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguesa de Pollo $1200</h5>
+                  <p class="card-text">Queso chedar, lechuga y tomate.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Hamburguesa de pollo`, 1200)">Añadir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pizzas">
+            <section class="jumbotron text-center">
+              <div class="container">
+                <br><br><br>
+                <h1 class="jumbotron-heading">Pizzas</h1>
+              </div>
+            </section>
+            <br><br>
+      
+            <div class="album py-5 bg-light">
+              <div class="container">
+      
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img
+                    src="./img/pizzaMozzarella.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                      <div class="card-body">
+                        <h5 class="card-title">Pizza Mozzarella $2200</h5>
+                        <p class="card-text">Ocho porciones con queso mozzarella, salsa de tomate y aceitunas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Pizza Mozzarella`, 2200)">Añadir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img
+                    src="./img/pizzaCuatroQuesos.jpeg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                      <div class="card-body">
+                        <h5 class="card-title">Pizza Cuatro Quesos $2500</h5>
+                        <p class="card-text">Ocho porciones con queso azul, provolone, reggianito y mozzarella.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Pizza Cuatro Quesos`, 2500)">Añadir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img
+                    src="./img/pizzaJamonQueso.jpg"
+                    class="card-img-top"
+                    alt=""
+                  />
+                      <div class="card-body">
+                        <h5 class="card-title">Pizza de jamón y queso $2300</h5>
+                        <p class="card-text">Ocho porciones con queso mozzarella, jamón cocido y salsa de tomate.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Pizza de jamón y queso`, 2300)">Añadir</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      <div id="bebidas">
+                        <section class="jumbotron text-center">
+                          <div class="container">
+                            <br><br><br>
+                            <h1 class="jumbotron-heading">Bebidas</h1>
+                          </div>
+                        </section>
+                        <br><br>
+                  
+                        <div class="album py-5 bg-light">
+                          <div class="container">
+                  
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                  <img
+                                src="./img/cocaCola.jpg"
+                                class="card-img-top"
+                                alt=""
+                              />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Gaseosas 0,5L $450</h5>
+                                    <p class="card-text">Coca cola, Fanta o Sprite común, light o cero.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Gaseosa 0.5L`, 450)">Añadir</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                  <img
+                                src="./img/logoCorona.png"
+                                class="card-img-top"
+                                alt=""
+                              />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Cerveza Corona 330cc $450</h5>
+                                    <p class="card-text">Cerveza Corona de 330cc.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Cerveza Corona 330cc`, 450)">Añadir</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                  <img
+                                src="./img/logoLevite.jpg"
+                                class="card-img-top"
+                                alt=""
+                              />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Agua Saborizada 0,5L $350</h5>
+                                    <p class="card-text">Levite de pomelo, naranja, uva o manzana.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="carrito(`Agua Saborizada 0,5L`, 350)">Añadir</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div id="zonaCarrito"></div>
+      </div>
+    
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <br>
+            <p>&copy Hamburgueseria</p>
+          </div>
+          <div class="col-md-2">
+            <br>
+            <a href="https://www.instagram.com/manukado22/"><p><i class="fa-brands fa-instagram fa-lg" ></i> Hamburgueseria</p></a>
+          </div>
+      </div>
+      </div>
+    </footer>
+    
+<script src="js/bootstrap.bundle.js"></script>
+<script src="./carrito.js"></script>
+<script src="https://kit.fontawesome.com/69e3ccb6b1.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
